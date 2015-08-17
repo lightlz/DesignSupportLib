@@ -4,6 +4,7 @@
         <item name="colorPrimary">#3F51B5</item>
         <item name="colorPrimaryDark">#303F9F</item>
         <item name="colorAccent">#9E9E9E</item>
+        <!--<item name="colorControlNormal">#FFFFFF</item>-->
         <!--<item name="primary">#3F51B5</item>-->
         <!--<item name="primary_dark">#303F9F</item>-->
         <!--<item name="primary_light">#C5CAE9</item>-->

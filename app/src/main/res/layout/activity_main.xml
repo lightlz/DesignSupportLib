@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!-- The ActionBar -->
+
             <android.support.design.widget.AppBarLayout
                 android:id="@+id/appbar"
                 android:layout_width="match_parent"
@@ -38,11 +38,12 @@
 
         <!-- The navigation drawer -->
         <android.support.design.widget.NavigationView
-            android:id="@+id/nvView"
+            android:id="@+id/navigation_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@android:color/white"
+            app:headerLayout="@layout/navigation_header"
             app:menu="@menu/drawer" />
     </android.support.v4.widget.DrawerLayout>
 
