@@ -9,16 +9,17 @@
     android:gravity="bottom">
 
     <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/logo"/>
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/logo"
+         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Header"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="8dp"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>

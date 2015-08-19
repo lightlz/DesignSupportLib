@@ -13,5 +13,6 @@
         <!--<item name="secondary_text">#727272</item>-->
         <!--<item name="icons">#FFFFFF</item>-->
         <!--<item name="divider">#B6B6B6</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 </resources>
