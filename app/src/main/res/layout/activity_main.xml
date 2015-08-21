@@ -15,7 +15,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
             <android.support.design.widget.AppBarLayout
                 android:id="@+id/appbar"
                 android:layout_width="match_parent"
@@ -29,7 +28,7 @@
 
             </android.support.design.widget.AppBarLayout>
 
-            <!-- The main content view -->
+            <!-- content view -->
             <FrameLayout
                 android:id="@+id/flContent"
                 android:layout_width="match_parent"
