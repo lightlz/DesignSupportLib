@@ -14,5 +14,6 @@
         <!--<item name="icons">#FFFFFF</item>-->
         <!--<item name="divider">#B6B6B6</item>-->
         <item name="android:windowTranslucentStatus">true</item>
+
     </style>
 </resources>

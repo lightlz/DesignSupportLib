@@ -16,14 +16,20 @@
             android:title="Third" />
     </group>
 
-    <item android:title="Sub items">
+    <item android:title="FAB STYLES">
         <menu>
             <item
+                android:id="@+id/nav_fab1"
                 android:icon="@drawable/ic_action_1"
-                android:title="Sub item 1" />
+                android:title="FAB 1" />
             <item
+                android:id="@+id/nav_fab2"
                 android:icon="@drawable/ic_action_filter_2"
-                android:title="Sub item 2" />
+                android:title="FAB 2" />
+            <item
+                android:id="@+id/nav_fab3"
+                android:icon="@drawable/ic_action_filter_3"
+                android:title="FAB 3" />
         </menu>
     </item>
 

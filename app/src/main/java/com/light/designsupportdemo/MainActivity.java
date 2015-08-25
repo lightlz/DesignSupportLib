@@ -2,6 +2,7 @@ package com.light.designsupportdemo;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,6 +15,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.light.designsupportdemo.ui.fragment.FabOneFragment;
+import com.light.designsupportdemo.ui.fragment.FabSecondFragment;
+import com.light.designsupportdemo.ui.fragment.FabThreeFragment;
 import com.light.designsupportdemo.ui.fragment.FirstFragment;
 import com.light.designsupportdemo.ui.fragment.SecordFragment;
 import com.light.designsupportdemo.ui.fragment.ThirdFragment;
@@ -26,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView mNavigationView;
 
     private ActionBarDrawerToggle drawerToggle;
+
+    private AppBarLayout appBarLayout;
+
+    private ActionBar ab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +49,16 @@ public class MainActivity extends AppCompatActivity {
         mDrawer.setDrawerListener(drawerToggle);
 
         // 使用导航按钮
-        final ActionBar ab = getSupportActionBar();
+        ab = getSupportActionBar();
         //ab.setHomeAsUpIndicator(R.drawable.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
+
 
         // 点击导航栏选项，切换 fragment
         mNavigationView = (NavigationView)findViewById(R.id.navigation_view);
         setDrawerContent(mNavigationView);
+
+        appBarLayout = (AppBarLayout)findViewById(R.id.appbar);
 
     }
 
@@ -85,6 +96,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_third:
                 fragmentClass = ThirdFragment.class;
                 break;
+
+            case R.id.nav_fab1:
+                fragmentClass = FabOneFragment.class;
+                break;
+            case R.id.nav_fab2:
+                fragmentClass = FabSecondFragment.class;
+                break;
+            case R.id.nav_fab3:
+                fragmentClass = FabThreeFragment.class;
+                break;
+
         }
 
         try {

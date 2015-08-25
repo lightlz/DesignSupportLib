@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:gravity="center"
+
     android:layout_height="match_parent">
 
     <android.support.design.widget.CoordinatorLayout
@@ -23,23 +23,21 @@
                 android:layout_margin="16dp"
                 android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_title"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:id="@+id/tv_content"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </ScrollView>
-
-
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -50,7 +48,27 @@
             app:layout_anchor="@id/scrollView"
             app:layout_anchorGravity="bottom|right|end" />
 
+            <io.codetail.widget.RevealFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:visibility="invisible"
+                    android:background="?attr/colorPrimary">
+
+                    <include layout="@layout/toolbar_footer"></include>
+
+                </android.support.v7.widget.Toolbar>
+
+
+
+            </io.codetail.widget.RevealFrameLayout>
 
     </android.support.design.widget.CoordinatorLayout>
+
 
 </LinearLayout>
