@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         appBarLayout = (AppBarLayout)findViewById(R.id.appbar);
 
+
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
@@ -156,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case android.R.id.home:
                 mDrawer.openDrawer(GravityCompat.START);
+
                 return true;
         }
 

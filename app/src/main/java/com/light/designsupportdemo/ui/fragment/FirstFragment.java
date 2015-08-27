@@ -62,32 +62,7 @@ public class FirstFragment extends Fragment implements ViewTreeObserver.OnScroll
         mFab = (FloatingActionButton)view.findViewById(R.id.fab);
         mScrollView = (ScrollView)view.findViewById(R.id.scrollView);
 
-//        mScrollView.setOnTouchListener(new View.OnTouchListener() {
-//            private int lastY = 0;
-//            private int touchEventId = -9983761;
-//            Handler handler = new Handler() {
-//                @Override
-//                public void handleMessage(Message msg) {
-//                    super.handleMessage(msg);
-//                    Log.v("aaaaa    ","aaaa");
-//                    mFab.show();
-//                    if (msg.what == touchEventId) {
-//                      //  mFab.show();
-//                    }
-//                }
-//            };
-//
-//            public boolean onTouch(View v, MotionEvent event) {
-//
-//                if (event.getAction() == MotionEvent.ACTION_UP) {
-//                    handler.sendEmptyMessage(touchEventId);
-//                    mFab.hide();
-//                }
-//                return false;
-//            }
-//
-//        });
-        mScrollView.setOnTouchListener(new View.OnTouchListener() {
+            mScrollView.setOnTouchListener(new View.OnTouchListener() {
             private int lastY = 0;
             private int touchEventId = -9983761;
             Handler handler = new Handler() {
