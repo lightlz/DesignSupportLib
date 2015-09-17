@@ -63,9 +63,6 @@
                     <include layout="@layout/toolbar_footer"></include>
 
                 </android.support.v7.widget.Toolbar>
-
-
-
             </io.codetail.widget.RevealFrameLayout>
 
     </android.support.design.widget.CoordinatorLayout>

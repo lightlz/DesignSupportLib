@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
@@ -39,8 +38,6 @@
 
         </ScrollView>
 
-
-
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
@@ -49,7 +46,6 @@
             android:src="@drawable/ic_action_add"
             app:layout_anchor="@id/scrollView"
             app:layout_anchorGravity="bottom|right|end" />
-
 
     </android.support.design.widget.CoordinatorLayout>
 

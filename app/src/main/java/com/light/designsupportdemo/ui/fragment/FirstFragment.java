@@ -76,18 +76,20 @@ public class FirstFragment extends Fragment implements ViewTreeObserver.OnScroll
                         if (lastY == scroller.getScrollY()) {
                             mFab.show();
                         } else {
-                            handler.sendMessageDelayed(handler.obtainMessage(touchEventId, scroller), 5);
+                            handler.sendMessageDelayed(handler.obtainMessage(touchEventId, scroller), 10);
                             lastY = scroller.getScrollY();
                         }
                     }
                 }
             };
 
-
             public boolean onTouch(View v, MotionEvent event) {
-                mFab.hide();
+
                 if (event.getAction() == MotionEvent.ACTION_UP) {
-                    handler.sendMessageDelayed(handler.obtainMessage(touchEventId, v), 5);
+                    handler.sendMessageDelayed(handler.obtainMessage(touchEventId, v), 10);
+                }
+                if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    mFab.hide();
                 }
                 return false;
             }
@@ -102,6 +104,6 @@ public class FirstFragment extends Fragment implements ViewTreeObserver.OnScroll
 
     @Override
     public void onScrollChanged() {
-
+        //mFab.show();
     }
 }
