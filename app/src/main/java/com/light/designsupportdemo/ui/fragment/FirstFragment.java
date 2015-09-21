@@ -5,7 +5,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -95,6 +97,18 @@ public class FirstFragment extends Fragment implements ViewTreeObserver.OnScroll
             }
         });
 
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(mScrollView,"SNACKBAR SHOW",Snackbar.LENGTH_LONG)
+                        .setAction("UNDO", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Log.v("Snackbar Undo : " ,"OnClick");
+                            }
+                        }).show();
+            }
+        });
     }
 
     @Override
