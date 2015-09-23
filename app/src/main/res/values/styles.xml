@@ -7,6 +7,7 @@
         <item name="colorAccent">#9E9E9E</item>
         <item name="android:textColorPrimary">#212121</item>
         <item name="android:textColorSecondary">#727272</item>
+        <item name="android:divider">#303F9F</item>
     </style>
 
     <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
@@ -23,6 +24,7 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">false</item> <!--文本大写-->
     </style>
+
 
 
 </resources>

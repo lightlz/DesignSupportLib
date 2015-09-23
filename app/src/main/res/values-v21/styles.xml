@@ -3,14 +3,17 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#3F51B5</item>
         <item name="colorPrimaryDark">#303F9F</item>
-        <item name="colorAccent">#9E9E9E</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorControlNormal">@color/accent</item>
+        <item name="android:colorControlActivated">#303F9F</item>
+        <item name="android:colorControlHighlight">@color/accent</item>
         <!--<item name="colorControlNormal">#FFFFFF</item>-->
         <!--<item name="primary">#3F51B5</item>-->
         <!--<item name="primary_dark">#303F9F</item>-->
         <!--<item name="primary_light">#C5CAE9</item>-->
         <!--<item name="accent">#9E9E9E</item>-->
-        <!--<item name="primary_text">#212121</item>-->
-        <!--<item name="secondary_text">#727272</item>-->
+        <!--<item name="android:textColorPrimary">#212121</item>-->
+        <!--<item name="android:textColorSecondary">#727272</item>-->
         <!--<item name="icons">#FFFFFF</item>-->
         <!--<item name="divider">#B6B6B6</item>-->
         <item name="android:windowTranslucentStatus">true</item>
