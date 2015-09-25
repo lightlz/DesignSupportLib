@@ -19,6 +19,7 @@ import com.light.designsupportdemo.ui.fragment.FabOneFragment;
 import com.light.designsupportdemo.ui.fragment.FabSecondFragment;
 import com.light.designsupportdemo.ui.fragment.FabThreeFragment;
 import com.light.designsupportdemo.ui.fragment.FirstFragment;
+import com.light.designsupportdemo.ui.fragment.PercentFragment;
 import com.light.designsupportdemo.ui.fragment.SecordFragment;
 import com.light.designsupportdemo.ui.fragment.ThirdFragment;
 
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
         setDrawerContent(mNavigationView);
 
         appBarLayout = (AppBarLayout)findViewById(R.id.appbar);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, new PercentFragment()).commit();
 
 
     }

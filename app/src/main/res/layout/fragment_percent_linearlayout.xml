@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.light.designsupportdemo.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top_left"
+        android:background="#00796B"
+        android:layout_width="match_parent"
+        android:text="How"
+        app:layout_heightPercent="25%"
+        style="@style/myPercent"/>
+
+    <TextView
+        android:id="@+id/top_right"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:text="do"
+        app:layout_heightPercent="25%"
+        style="@style/myPercent"/>
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:background="#FFEB3B"
+        android:text="you"
+        app:layout_heightPercent="25%"
+        style="@style/myPercent"/>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:text="do?"
+        android:background="#E040FB"
+        app:layout_heightPercent="25%"
+        style="@style/myPercent"/>
+
+</com.light.designsupportdemo.PercentLinearLayout>
+
+

@@ -25,5 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:cardview-v7:22.0.+'
     compile 'konifar:fab-transformation:1.0.0'
+    compile 'com.android.support:percent:22.2.0'
     testCompile 'junit:junit:4.12'
 }

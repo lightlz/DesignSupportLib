@@ -25,6 +25,14 @@
         <item name="textAllCaps">false</item> <!--文本大写-->
     </style>
 
+    <style name="myPercent">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 
 
 </resources>

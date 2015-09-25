@@ -16,7 +16,6 @@
             android:layout_height="wrap_content"
             android:hint="light.lz1993@gmail.com"/>
 
-
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout

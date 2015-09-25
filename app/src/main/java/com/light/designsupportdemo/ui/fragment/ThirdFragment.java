@@ -60,7 +60,6 @@ public class ThirdFragment extends Fragment {
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int count) {
 
             }
-
             @Override
             public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
 
@@ -71,7 +70,6 @@ public class ThirdFragment extends Fragment {
                     textInputLayout.setErrorEnabled(false);
                 }
             }
-
             @Override
             public void afterTextChanged(Editable editable) {
 
