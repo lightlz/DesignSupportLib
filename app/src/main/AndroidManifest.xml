@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CoordinatorActivity" android:theme="@style/AppTheme.transpant"/>
+        <activity android:name=".StandardBarActivity"/>
+        <activity android:name=".TabActivity"/>
+        <activity android:name=".OverlappingActivity"/>
     </application>
 
 </manifest>

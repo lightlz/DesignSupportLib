@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,6 +55,19 @@ public class SecordFragment extends Fragment {
         for(int i=0;i<mTabLayout.getTabCount();i++){
             TabLayout.Tab tab = mTabLayout.getTabAt(i);
             tab.setCustomView(adapter.getTabView(i,tab));
+        }
+
+        // pay attemtion
+        if (ViewCompat.isLaidOut(mTabLayout)) {
+            mTabLayout.setupWithViewPager(mViewPager);
+        } else {
+            mTabLayout.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                @Override
+                public void onLayoutChange(View view, int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7) {
+                    mTabLayout.setupWithViewPager(mViewPager);
+                    mTabLayout.removeOnLayoutChangeListener(this);
+                }
+            });
         }
 
     }

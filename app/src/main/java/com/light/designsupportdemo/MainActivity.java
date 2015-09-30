@@ -1,5 +1,6 @@
 package com.light.designsupportdemo;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -163,6 +164,18 @@ public class MainActivity extends AppCompatActivity {
                 mDrawer.openDrawer(GravityCompat.START);
 
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this,CoordinatorActivity.class));
+                break;
+            case R.id.action_standard:
+                startActivity(new Intent(this,StandardBarActivity.class));
+                break;
+            case R.id.action_tab:
+                startActivity(new Intent(this,TabActivity.class));
+                break;
+            case R.id.action_overlap:
+                startActivity(new Intent(this,OverlappingActivity.class));
+                break;
         }
 
         if (drawerToggle.onOptionsItemSelected(item)) {

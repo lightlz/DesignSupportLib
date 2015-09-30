@@ -16,7 +16,14 @@
         <!--<item name="android:textColorSecondary">#727272</item>-->
         <!--<item name="icons">#FFFFFF</item>-->
         <!--<item name="divider">#B6B6B6</item>-->
-        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
 
+    </style>
+
+    <style name="AppTheme.transpant" parent="AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>

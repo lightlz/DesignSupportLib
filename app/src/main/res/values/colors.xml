@@ -13,6 +13,7 @@
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
+    <color name="pink">#e90ac0</color>
 
     <drawable name="divider_drawable">#212121</drawable>
 
